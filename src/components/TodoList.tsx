@@ -44,8 +44,8 @@ const TodoList = () => {
       </thead>
       <tbody>
         {
-          tasks.map(task => (
-            <tr>
+          tasks.map((task, index) => (
+            <tr key={index}>
               <td>{ task.name }</td>
             </tr>
           ))
